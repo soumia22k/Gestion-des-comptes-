@@ -6,8 +6,6 @@ public class Personne {
     private int age;
     private String adresse;
     private String id;
-    private String email;
-    private String password;
     private Role role;
 
     // Liste pour stocker les utilisateurs
@@ -20,8 +18,6 @@ public class Personne {
         this.age = age;
         this.adresse = adresse;
         this.id = id;
-        this.email = email;
-        this.password = password;
         this.role = role;
     }
 
@@ -59,8 +55,7 @@ public class Personne {
                 ", age=" + age +
                 ", adresse='" + adresse + '\'' +
                 ", id='" + id + '\'' +
-                ", email='" + email + '\'' +
-                ", role=" + role.getNomRole() +
+                ", role=" + role +
                 '}';
     }
 
@@ -139,7 +134,7 @@ public class Personne {
         Personne utilisateurExist = rechercherUtilisateur(id);
 
         if (utilisateurExist != null) {
-            // Demander les nouvelles informations :
+            //  les nouvelles informations :
             System.out.print("Nouveau Nom (laisser vide pour ne pas changer): ");
             String nouveauNom = scanner.nextLine();
             if (!nouveauNom.isEmpty()) utilisateurExist.setName(nouveauNom);

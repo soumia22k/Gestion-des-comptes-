@@ -5,6 +5,9 @@ public class Role {
         return nomRole;
     }
 
+    public void setNomRole(String nomRole) {
+        this.nomRole = nomRole;
+    }
 
     public Role(String nomRole) {
         this.nomRole = nomRole;

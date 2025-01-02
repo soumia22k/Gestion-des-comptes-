@@ -2,9 +2,10 @@ import java.util.Scanner;
 
 
 public class Main {
-    private static Scanner scanner;
+     static Scanner scanner;
 
     public static void main(String[] args) {
+        scanner = new Scanner(System.in);
         while (true) {
             // Afficher le menu
             System.out.println("\nMenu:");
@@ -50,12 +51,12 @@ public class Main {
                     break;
                 case 6:
                     System.out.println("Au revoir !");
-                    scanner.close();
                     return;
                 default:
                     System.out.println("Option invalide. Veuillez réessayer.");
             }
         }
     }
+
 }
 
