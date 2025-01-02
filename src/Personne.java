@@ -108,14 +108,10 @@ public class Personne {
         Personne nouvelUtilisateur = new Personne(nom, age, adresse, id, email, password, roleChoisi);
         utilisateurs.add(nouvelUtilisateur);
         System.out.println("Utilisateur ajouté : " + nouvelUtilisateur);
+        
     }
 
     public static void afficherUtilisateurs() {
-        if (utilisateurs.isEmpty()) {
-            System.out.println("Aucun utilisateur disponible.");
-            return;
-        }
-
         for (Personne u : utilisateurs) {
             System.out.println(u);
         }
